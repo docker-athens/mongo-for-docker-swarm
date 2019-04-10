@@ -1,0 +1,26 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "8fb4679755a7fd286f64370017324cfddb65c5d9291ff02d5ecbe05649969776"
+        },
+        "pipfile-spec": 6,
+        "requires": {},
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "terraform-binary": {
+            "hashes": [
+                "sha256:3f525447e5fa9dbe20988d18c54acd926abe30619059870ce94179326adbbda5"
+            ],
+            "index": "pypi",
+            "version": "==0.11.11.post1"
+        }
+    },
+    "develop": {}
+}
