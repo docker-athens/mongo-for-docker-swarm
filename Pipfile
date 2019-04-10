@@ -3,3 +3,5 @@
 
 [packages]
 terraform-binary = "*"
+docker-compose = "*"
+paramiko = "*"

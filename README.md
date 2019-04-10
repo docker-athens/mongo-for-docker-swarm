@@ -9,7 +9,7 @@ The code inside this repository was used as reference in the [Stateful applicati
 1. Choose the stack of your choice from the [`stacks/`](stacks/) directory
 2. Deploy the MongoDB stack of your choice:
     ```
-    docker stack deploy -c stacks/{stack_name}/docker-compose.yml
+    docker stack deploy -c stacks/{stack_name}/docker-compose.yml {stack_name}
     ```
 
 ---

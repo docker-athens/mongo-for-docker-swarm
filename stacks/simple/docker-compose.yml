@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  mongo:
+    image: ${MONGO_IMAGE:-mongo:4.1-bionic}
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+    volumes:
+      - mongo_data:/data/db
+
+networks:
+  default:
+    attachable: true
+    name: ${MONGO_NETWORK_NAME:-mongo-simple}
+
+volumes:
+  mongo_data:
