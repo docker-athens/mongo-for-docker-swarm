@@ -14,6 +14,6 @@
 3. Verify that MongoDB is running alright by signing into its shell
     ```
     docker exec -ti \
-    $(docker ps -q --filter=label=com.docker.stack.namespace=mongo-secrets) \
+    $(docker ps -n 1 -q --filter=label=com.docker.stack.namespace=mongo-secrets) \
     mongo -u $MONGO_ROOT_USERNAME -p $MONGO_ROOT_PASSWORD --authenticationDatabase admin
     ```
